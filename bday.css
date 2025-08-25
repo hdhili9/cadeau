@@ -1,0 +1,106 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffafbd, #ffc3a0, #ffdde1, #ee9ca7);
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+    header {
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-size: 3.8rem;
+      color: #fff;
+      text-shadow: 0 0 15px #fff, 0 0 30px #ff69b4, 0 0 50px #ff1493;
+      margin-bottom: 20px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    header p {
+      font-size: 1.5rem;
+      color: #fff0f5;
+      margin-bottom: 25px;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff69b4; }
+      to { text-shadow: 0 0 40px #ff1493, 0 0 60px #ff69b4; }
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: absolute;
+      font-size: 2rem;
+      color: #ff69b4;
+      animation: float 8s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh) scale(0.5); opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      padding: 30px;
+      font-size: 1.3rem;
+      color: #fff;
+      text-shadow: 0 0 10px #ff69b4;
+    }
+
+    /* Love letter popup */
+    #letter {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 192, 203, 0.95);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255,0,100,0.6);
+      max-width: 400px;
+      color: #fff;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    #closeLetter {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      background: #ff69b4;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #loveBtn {
+      margin: 20px;
+      padding: 12px 25px;
+      background: #ff1493;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 0 15px #ff69b4;
+      transition: transform 0.2s;
+    }
+    #loveBtn:hover {
+      transform: scale(1.1);
+    }
