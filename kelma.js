@@ -39,11 +39,11 @@ closeLetter.addEventListener("click", () => {
   letter.style.display = "none";
 });
 
- const voice = document.getElementById("voice1");
-    voice.play().catch(() => {
+ const voice1 = document.getElementById("voice1");
+    voice1.play().catch(() => {
       // If blocked, play when user clicks anywhere
       document.body.addEventListener("click", () => {
-        voice.play();
+        voice1.play();
       }, { once: true });
     });
 }
