@@ -1,6 +1,5 @@
 
 function createHeart() {
-  alert("Listen careful")
        const heart = document.createElement("div");
     heart.classList.add("heart");
     heart.innerHTML = "💖";
