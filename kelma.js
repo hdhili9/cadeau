@@ -1,3 +1,10 @@
+const voice = document.getElementById("voice");
+    voice.play().catch(() => {
+      // If blocked, play when user clicks anywhere
+      document.body.addEventListener("click", () => {
+        voice.play();
+      }, { once: true });
+    });
 function createHeart() {
        const heart = document.createElement("div");
     heart.classList.add("heart");
