@@ -1,5 +1,5 @@
 function createHeart() {
-       const heart = document.createElement("div");
+      const heart = document.createElement("div");
     heart.classList.add("heart");
     heart.innerHTML = "💖";
     document.body.appendChild(heart);
