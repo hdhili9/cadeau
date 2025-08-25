@@ -30,4 +30,5 @@ loveBtn.addEventListener("click", () => {
 closeLetter.addEventListener("click", () => {
   letter.style.display = "none";
 });
+document.getElementById('voice1').play()
 }
