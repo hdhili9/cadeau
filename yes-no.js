@@ -1,4 +1,5 @@
 alert("try to click no xd 🤪")
+alert("try to click no xd 🤪d   ")
 
 function souris(){
     const noBtn = document.getElementById('noBtn');
