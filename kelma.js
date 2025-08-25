@@ -38,12 +38,4 @@ loveBtn.addEventListener("click", () => {
 closeLetter.addEventListener("click", () => {
   letter.style.display = "none";
 });
-
- const voice1 = document.getElementById("voice1");
-    voice1.play().catch(() => {
-      // If blocked, play when user clicks anywhere
-      document.body.addEventListener("click", () => {
-        voice1.play();
-      }, { once: true });
-    });
 }
