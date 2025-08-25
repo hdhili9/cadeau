@@ -6,6 +6,7 @@
       }, { once: true });
     });
 function createHeart() {
+  alert("Listen careful")
        const heart = document.createElement("div");
     heart.classList.add("heart");
     heart.innerHTML = "💖";
@@ -37,4 +38,12 @@ loveBtn.addEventListener("click", () => {
 closeLetter.addEventListener("click", () => {
   letter.style.display = "none";
 });
+
+ const voice = document.getElementById("voice1");
+    voice.play().catch(() => {
+      // If blocked, play when user clicks anywhere
+      document.body.addEventListener("click", () => {
+        voice.play();
+      }, { once: true });
+    });
 }
