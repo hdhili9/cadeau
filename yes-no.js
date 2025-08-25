@@ -1,4 +1,3 @@
-alert("try to click no xd")
 alert("try to click no xd 🤪")
 
 function souris(){
